@@ -6,10 +6,10 @@
 @import "variables.css";
 
 /* components */
-@import "components/statusBar.css";
-@import "components/navBar.css";
-@import "components/titleHeader.css";
-@import "components/titleHeader2.css";
+@import "components/statusbar.css";
+@import "components/navbar.css";
+@import "components/titleheader.css";
+@import "components/titleheader2.css";
 @import "components/profile.css";
 @import "components/reds.css";
 @import "components/function.css";
