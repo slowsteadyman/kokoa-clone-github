@@ -1,0 +1,19 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  animation: loading 2s linear forwards;
+  /* forwards는 애니메이션이 끝난 상태를 유지한다.
+  delay는 애니메이션의 시작 속도를 늦춘다. */
+}
+@keyframes loading {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+    /* hidden은 실제로 없어지는게 아니다. 안보일 뿐. */
+  }
+}

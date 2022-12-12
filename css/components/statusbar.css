@@ -1,0 +1,30 @@
+.statusBar__box {
+  width: 33.33%;
+}
+.statusBar {
+  display: flex;
+  padding: 3px 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 3px;
+  z-index: 3;
+}
+.statusBar__box:first-child {
+  margin-left: 5px;
+}
+.statusBar__box:nth-child(2) {
+  text-align: center;
+}
+.statusBar__box:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3px;
+}
+.statusBar__box:nth-child(3) * {
+  margin: 0 2px;
+}
+/* css hack) align blocks width by % and arrange them 
+  :not()
+  */

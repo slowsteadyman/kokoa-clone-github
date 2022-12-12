@@ -1,0 +1,102 @@
+.friendRecommend {
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: var(--greyBorder);
+  border-bottom: var(--greyBorder);
+  color: var(--grey);
+}
+.friendRecommend__text {
+  font-size: 17px;
+  text-align: center;
+  padding: 100px 0;
+}
+.openChat {
+  margin-top: 15px;
+}
+.openChat__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: var(--grey);
+}
+.openChat__title :last-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.openChat__title i {
+  margin-left: 5px;
+}
+.openChat__hastag img {
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  margin-right: 3px;
+}
+.openChat__photo img {
+  width: 85px;
+  height: 85px;
+  border-radius: 7px;
+}
+.openChat__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: var(--greyBorder);
+}
+.openChat__hastag {
+  display: flex;
+  flex-direction: column;
+}
+.openChat__hastag--1 {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.openChat__hastag--2 {
+  color: var(--grey);
+  margin-bottom: 3px;
+}
+.openChat__hastag--member {
+  display: flex;
+  align-items: center;
+  color: var(--grey);
+  font-size: 15px;
+}
+.openChat__hastag--member span:last-child {
+  color: rgb(239, 125, 206);
+  font-size: 13px;
+}
+.openChat__photo {
+  position: relative;
+}
+.openChat__photo--heart {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 5px;
+}
+@keyframes heartBeat {
+  0% {
+  }
+  50% {
+    color: red;
+    transform: scale(2);
+  }
+  100% {
+  }
+}
+.openChat__photo--heart i {
+  margin-right: 4px;
+}
+.openChat__photo--heart:hover i {
+  animation: heartBeat 0.5s linear infinite;
+  will-change: transform;
+  /* will change) 그래픽카드를 통해 애니메이션을 부드럽게 */
+}

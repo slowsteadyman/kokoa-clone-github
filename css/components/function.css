@@ -1,0 +1,26 @@
+.function {
+  display: flex;
+  margin-top: 30px;
+}
+.function__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+.function__item i {
+  font-size: 29px;
+}
+.function__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 18px;
+  height: 30px;
+}
+.icon__id {
+  position: relative;
+  bottom: 70px;
+  font-size: 13px;
+}
