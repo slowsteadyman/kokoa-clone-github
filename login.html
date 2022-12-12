@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/screen.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakaotalk-login</title>
+  </head>
+  <body>
+    <div class="statusBar">
+      <div class="statusBar__box">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="statusBar__box">
+        <span>18:43</span>
+      </div>
+      <div class="statusBar__box">
+        <i class="fa-solid fa-lock"></i>
+        <span>11%</span>
+        <i class="fa-solid fa-battery-quarter"></i>
+        <i class="fa-solid fa-bolt"></i>
+        <!-- span 안에 icon 하면 icon 사이에 공백 생김 -->
+      </div>
+    </div>
+    <div class="welcomeHeader">
+      <h1>Welcome to KakaoTalk</h1>
+      <!-- 요것도 bem으로 태그를 달았어야지 -->
+      <p>
+        If you have a Kakao Account,<br />log in with your email or phone
+        number.
+      </p>
+      <!-- 요것도 bem으로 태그를 달았어야지 -->
+    </div>
+    <form class="login" action="friends.html" method="get">
+      <!-- action) 언급된 파일로 데이터를 전송한다.
+        method) post는 백엔드에서, get은 그냥 get한걸 전송하는데, 
+        url에도 보이기 때문에 보안에 취약하다. -->
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kakao Account or Password</a>
+      <!-- 요것도 bem으로 태그를 달았어야지 -->
+    </form>
+    <script
+      src="https://kit.fontawesome.com/31c4bb9ebd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- icon) fontawesome사이트 -> script (바디 맨끝에) -> 사이트에서 아이콘 코드 가져와서 쓰면 됨
+    icon 크기는 fa-lg, fa-xl, fa-or, fa-2x, fa-5x 등의 클래스를 추가해서 키울 수 있음. 
+    사이트의 document 페이지에 있음.-->
+  </body>
+</html>

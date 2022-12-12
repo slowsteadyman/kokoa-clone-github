@@ -1,0 +1,113 @@
+<!-- easyhand) nav>ul>li*4>a -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/screen.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakaotalk-friends</title>
+  </head>
+  <body>
+    <div class="statusBar">
+      <div class="statusBar__box">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="statusBar__box">
+        <span>18:43</span>
+      </div>
+      <div class="statusBar__box">
+        <i class="fa-solid fa-lock"></i>
+        <span>11%</span>
+        <i class="fa-solid fa-battery-quarter"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <div class="titleHeader">
+      <div class="titleHeader__name">Friends</div>
+      <div class="titleHeader__item">
+        <a class="titleHeader__link" href="#">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </a>
+        <a class="titleHeader__link" href="#">
+          <i class="fa-solid fa-music fa-xl"></i>
+        </a>
+        <a class="titleHeader__link" href="setting.html">
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </a>
+      </div>
+    </div>
+    <a class="fNamedisplay" href="#">
+      <i class="fa-solid fa-circle-info"></i>
+      <span class="fNamedisplay__span">Friends' Names Display</span>
+      <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+    <div class="profile">
+      <div class="profile__left">
+        <img
+          class="profile__img profile__img--big"
+          src="screenshots/face.jpeg"
+        />
+        <div class="profile__text">
+          <span class="profile__name profile__name--bolder">frog</span>
+        </div>
+      </div>
+    </div>
+    <div class="foldBar">
+      <span class="foldBar__name">channel</span>
+      <a class="foldBar__btn" href="#">
+        <i class="fa-solid fa-chevron-up fa-xs"></i>
+      </a>
+    </div>
+    <div class="profile">
+      <!-- 큰 부분은 main 태그로 크게 묶어주는 것도 좋은 방법 -->
+      <div class="profile__left">
+        <img
+          class="profile__img profile__img--small"
+          src="screenshots/face.jpeg"
+        />
+        <div class="profile__text">
+          <span class="profile__name profile__name--light">channel</span>
+        </div>
+      </div>
+      <div class="profile__right--channel">
+        <span class="profile__notice">2</span>
+        <a class="profile__link" href="#">
+          <i class="fa-solid fa-chevron-right fa-xs"></i>
+        </a>
+      </div>
+    </div>
+    <nav class="navBar">
+      <ul class="navBar__list">
+        <li class="navBar__item">
+          <a class="navBar__link" href="friends.html">
+            <i class="fa-solid fa-user fa-xl"></i>
+          </a>
+        </li>
+        <li class="navBar__item">
+          <a class="navBar__link" href="chats.html">
+            <span class="navBar__link__chatNotice redNotice">1</span>
+            <i class="fa-regular fa-comment fa-xl"></i>
+          </a>
+        </li>
+        <li class="navBar__item">
+          <a class="navBar__link" href="search.html">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+        <li class="navBar__item">
+          <a class="navBar__link" href="etc.html">
+            <span class="navBar__link__ellNotice redDot"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/31c4bb9ebd.js"
+      crossorigin="anonymous"
+    ></script>
+    <img src="screenshots/01.png" class="loading" />
+  </body>
+</html>
