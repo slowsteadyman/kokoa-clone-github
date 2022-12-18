@@ -34,7 +34,7 @@
   flex-direction: column;
 }
 .profile__name {
-  color: var(--grey2);
+  color: var(--gray3);
 }
 .profile__name--bolder {
   font-size: 20px;
@@ -54,7 +54,7 @@
 .profile__right--channel :first-child,
 .profile__message,
 .profile__time {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray3);
 }
 .profile__link {
   margin-left: 5px;
@@ -81,7 +81,7 @@
   margin-left: 5px;
 }
 .profile__right--icon a {
-  color: var(--grey2);
+  color: var(--gray3);
   text-decoration: none;
   margin-right: 10px;
 }

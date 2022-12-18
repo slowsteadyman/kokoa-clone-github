@@ -10,22 +10,23 @@
   <body class="chatScreen">
     <div class="statusBar">
       <div class="statusBar__box">
-        <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-signal"></i>
+        <span>KT LTE</span>
       </div>
       <div class="statusBar__box">
-        <span>18:43</span>
+        <span>08:57</span>
       </div>
       <div class="statusBar__box">
-        <i class="fa-solid fa-lock"></i>
-        <span>11%</span>
-        <i class="fa-solid fa-battery-quarter"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-headphones-simple"></i>
+        <i class="fa-brands fa-bluetooth"></i>
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-xl"></i>
+        <!-- span 안에 icon 하면 icon 사이에 공백 생김 -->
       </div>
     </div>
     <div class="titleHeader2 titleHeader2-chat">
       <div class="titleHeader2__list">
-        <a href="javascript:history.back();" class="titleHeader2__link goback">
+        <a href="chats.html" class="titleHeader2__link goback">
           <i class="fa-solid fa-chevron-left fa-xl"></i>
         </a>
       </div>
@@ -52,14 +53,14 @@
             <span class="chatYou__name">Frog</span>
           </div>
           <div class="chatYou__content--list">
-            <span class="chatYou__text">Hi!</span>
+            <span class="chatYou__text">How are you?</span>
             <span class="chatYou__time">21:27</span>
           </div>
         </div>
       </div>
       <div class="chatMe">
-        <span class="chatMe__time">21:27</span>
-        <span class="chatMe__text">What's up</span>
+        <span class="chatMe__time">21:28</span>
+        <span class="chatMe__text">I'm fine thank you and you?</span>
       </div>
       <div class="chatting">
         <a href="#" class="chatting__option">
@@ -69,16 +70,68 @@
           <input
             class="chatting__write"
             type="text"
-            placeholder="write anything"
+            placeholder="write anything..."
           />
-          <a href="#" class="chatting__emoticon">
-            <i class="fa-regular fa-face-kiss fa-xl"></i>
-          </a>
+
+          <i class="fa-regular fa-face-kiss fa-xl"></i>
+
           <a href="#" class="chatting__send">
             <i class="fa-solid fa-arrow-up fa-xl"></i>
           </a>
         </form>
+        <div class="keyboard">
+          <div class="keyboard__row">
+            <div class="keyboard__key">q</div>
+            <div class="keyboard__key">w</div>
+            <div class="keyboard__key">e</div>
+            <div class="keyboard__key">r</div>
+            <div class="keyboard__key">t</div>
+            <div class="keyboard__key">y</div>
+            <div class="keyboard__key">u</div>
+            <div class="keyboard__key">i</div>
+            <div class="keyboard__key">o</div>
+            <div class="keyboard__key">p</div>
+          </div>
+          <div class="keyboard__row">
+            <div class="keyboard__key">a</div>
+            <div class="keyboard__key">s</div>
+            <div class="keyboard__key">d</div>
+            <div class="keyboard__key">f</div>
+            <div class="keyboard__key">g</div>
+            <div class="keyboard__key">h</div>
+            <div class="keyboard__key">j</div>
+            <div class="keyboard__key">k</div>
+            <div class="keyboard__key">l</div>
+            <div class="keyboard__key">;</div>
+          </div>
+          <div class="keyboard__row">
+            <div class="keyboard__key">
+              <i class="fa-regular fa-square-caret-up"></i>
+            </div>
+            <div class="keyboard__key">z</div>
+            <div class="keyboard__key">x</div>
+            <div class="keyboard__key">c</div>
+            <div class="keyboard__key">v</div>
+            <div class="keyboard__key">b</div>
+            <div class="keyboard__key">n</div>
+            <div class="keyboard__key">m</div>
+
+            <div class="keyboard__key">
+              <i class="fa-solid fa-delete-left"></i>
+            </div>
+          </div>
+          <div class="keyboard__row">
+            <div class="keyboard__key">123</div>
+            <div class="keyboard__key">😀</div>
+            <div class="keyboard__key">space</div>
+            <div class="keyboard__key">return</div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="screenRatio">
+      Change <br />Screen<br />
+      ratio
     </div>
 
     <script

@@ -3,12 +3,11 @@
   padding-top: 20px;
   border-top: var(--greyBorder);
   border-bottom: var(--greyBorder);
-  color: var(--grey);
 }
 .friendRecommend__text {
   font-size: 17px;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 0 80px 0;
 }
 .openChat {
   margin-top: 15px;
@@ -17,13 +16,9 @@
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  color: var(--grey);
+  margin-bottom: 10px;
 }
-.openChat__title :last-child {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
+
 .openChat__title i {
   margin-left: 5px;
 }
@@ -44,6 +39,7 @@
   align-items: center;
   padding-bottom: 10px;
   border-bottom: var(--greyBorder);
+  padding-top: 10px;
 }
 .openChat__hastag {
   display: flex;
@@ -54,13 +50,11 @@
   margin-bottom: 3px;
 }
 .openChat__hastag--2 {
-  color: var(--grey);
   margin-bottom: 3px;
 }
 .openChat__hastag--member {
   display: flex;
   align-items: center;
-  color: var(--grey);
   font-size: 15px;
 }
 .openChat__hastag--member span:last-child {

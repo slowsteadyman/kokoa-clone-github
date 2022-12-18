@@ -7,9 +7,7 @@
 .settings i {
   margin-right: 10px;
 }
-.settings__box:first-child {
-  color: var(--grey2);
-}
+
 .settings__info {
-  color: var(--grey);
+  color: var(--gray1);
 }

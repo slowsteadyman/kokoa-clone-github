@@ -19,35 +19,39 @@
   flex-direction: column;
   margin: 0 35px;
 }
-.login input[type="text"],
+.login input[type="email"],
 .login input[type="password"] {
   border: none;
-  border-bottom: 1px solid var(--grey);
-  padding: 23px 0;
+  border-bottom: 1px solid var(--gray1);
+  padding: 23px 10px;
   outline: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
   font-size: 18px;
   /* input:focus로 하는 것도 좋음. */
 }
 .login input::placeholder {
-  color: var(--grey);
-  font-size: 18px;
+  color: var(--gray1);
+  font-size: 15px;
 }
 .login input[type="password"] {
   margin-bottom: 31px;
 }
 .login input[type="submit"] {
   padding: 18px 0;
-  font-size: 16px;
+  font-size: 13px;
+  font-family: "Unbounded", cursive;
   border-radius: 5px;
   border: none;
   margin-bottom: 9px;
   cursor: pointer;
+  background-color: rgb(255, 225, 0);
 }
 .login a {
   margin-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: black;
+  color: var(--gray1);
   /* color:inherit) 부모님 상속 default black */
   text-decoration: none;
 }

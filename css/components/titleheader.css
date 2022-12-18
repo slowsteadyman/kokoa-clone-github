@@ -6,7 +6,7 @@
 .titleHeader__name {
   font-size: 23px;
   font-weight: bolder;
-  color: var(--grey2);
+  color: var(--gray3);
 }
 .titleHeader__item {
   display: flex;
@@ -14,8 +14,18 @@
 }
 .titleHeader__link {
   margin-left: 25px;
-  color: var(--grey2);
+  color: var(--gray3);
   position: relative;
+}
+.titleHeader__link:last-child i:hover {
+  animation: bingle 1s linear infinite;
+}
+@keyframes bingle {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .titleHeader__link--new {
   position: absolute;

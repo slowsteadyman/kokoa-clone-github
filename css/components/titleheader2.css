@@ -25,10 +25,9 @@
 .titleHeader2__name {
   font-size: 23px;
   font-weight: bolder;
-  color: var(--grey2);
 }
 .titleHeader2__link {
-  color: var(--grey2);
+  color: var(--gray3);
 }
 .titleHeader2__list:last-child .titleHeader2__link {
   margin-left: 25px;

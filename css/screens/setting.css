@@ -1,10 +1,10 @@
 .settings__list .settings:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: var(--greyBorder);
 }
 .underline {
   width: 100vw;
   margin-left: -30px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--greyBorder);
   margin-top: 30px;
   margin-bottom: 30px;
 }

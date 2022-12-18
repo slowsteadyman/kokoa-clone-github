@@ -9,7 +9,7 @@
   border-box) 지정된 box 크기 = content+margin+padding+border
   content-box 지정된 box 크기 = content.
   일반적으로 content-box로 되있음. */
-  background-color: rgba(240, 240, 240, 0.422);
+  background-color: rgb(58, 57, 57);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navBar__list {
@@ -18,9 +18,9 @@
   list-style: none;
 }
 .navBar__link {
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--gray3);
   position: relative;
-  animation: goUp 1s linear 2s forwards;
+  animation: goUp 1s linear 1s forwards;
   display: block;
   /* 블럭이 아니어서 애니메이션이 안됐던거임.. ㅅㅂ */
   transform: translateY(50px);

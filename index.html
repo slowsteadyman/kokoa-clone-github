@@ -10,17 +10,17 @@
   <body>
     <div class="statusBar">
       <div class="statusBar__box">
-        <span>No Service</span>
-        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-signal"></i>
+        <span>KT LTE</span>
       </div>
       <div class="statusBar__box">
-        <span>18:43</span>
+        <span>08:57</span>
       </div>
       <div class="statusBar__box">
-        <i class="fa-solid fa-lock"></i>
-        <span>11%</span>
-        <i class="fa-solid fa-battery-quarter"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-headphones-simple"></i>
+        <i class="fa-brands fa-bluetooth"></i>
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-xl"></i>
         <!-- span 안에 icon 하면 icon 사이에 공백 생김 -->
       </div>
     </div>
@@ -37,13 +37,17 @@
       <!-- action) 언급된 파일로 데이터를 전송한다.
         method) post는 백엔드에서, get은 그냥 get한걸 전송하는데, 
         url에도 보이기 때문에 보안에 취약하다. -->
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+      <input type="email" required placeholder="Email or phone number" />
+      <input type="password" required placeholder="Password" />
       <input type="submit" value="Log in" />
       <input type="submit" value="Sign Up" />
       <a href="#">Find Kakao Account or Password</a>
       <!-- 요것도 bem으로 태그를 달았어야지 -->
     </form>
+    <div class="screenRatio">
+      Change <br />Screen<br />
+      ratio
+    </div>
     <script
       src="https://kit.fontawesome.com/31c4bb9ebd.js"
       crossorigin="anonymous"

@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   z-index: 3;
-  animation: loading 2s linear forwards;
+  animation: loading 1s linear forwards;
   /* forwards는 애니메이션이 끝난 상태를 유지한다.
   delay는 애니메이션의 시작 속도를 늦춘다. */
 }

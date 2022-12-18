@@ -1,10 +1,12 @@
 .chatScreen {
-  background-color: #abc1d1;
+  background-color: rgb(171, 193, 209);
   height: 200vh;
 }
 .chatScreen__main {
   padding-top: 80px;
   z-index: 1;
+
+  position: relative;
 }
 .chatTime {
   width: 100%;
@@ -42,6 +44,7 @@
   padding: 10px;
   border-radius: 15px;
   border-top-left-radius: 0;
+  color: black;
 }
 .chatYou__time {
   margin-left: 5px;
@@ -58,10 +61,11 @@
   margin-top: 10px;
 }
 .chatMe__text {
-  background-color: rgb(255, 234, 0);
+  background-color: rgb(255, 225, 0);
   padding: 10px;
   border-radius: 15px;
   border-top-right-radius: 0;
+  color: black;
 }
 .chatMe__time {
   margin-right: 5px;
@@ -103,11 +107,11 @@
   font-size: 15px;
   margin-left: 10px;
 }
-.chatting__emoticon {
+.chatting__box > i {
   margin-right: 50px;
 }
 .chatting__send {
-  background-color: rgb(255, 234, 0);
+  background-color: rgb(255, 225, 0);
   color: black;
   height: 35px;
   width: 35px;
@@ -117,4 +121,63 @@
   border-radius: 50%;
   position: absolute;
   right: 3px;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray1);
+
+  padding: 10px 0;
+  width: 100vw;
+  margin-left: -15px;
+
+  position: fixed;
+  bottom: -201px;
+}
+
+.keyboard__row {
+  display: flex;
+  justify-content: center;
+}
+.keyboard__row:not(:last-child) {
+  margin-bottom: 7px;
+}
+.keyboard__key {
+  width: 40px;
+  height: 40px;
+  background-color: var(--gray2);
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
+.keyboard__key:not(:last-child) {
+  margin-right: 7px;
+}
+.keyboard__row:nth-child(3) .keyboard__key:first-child,
+.keyboard__row:nth-child(3) .keyboard__key:last-child {
+  width: 63.5px;
+}
+.keyboard__row:nth-child(4) .keyboard__key:nth-child(1) {
+  width: 63.5px;
+}
+.keyboard__row:nth-child(4) .keyboard__key:nth-child(3) {
+  width: 228px;
+}
+.keyboard__row:nth-child(4) .keyboard__key:nth-child(4) {
+  width: 110.5px;
+  background-color: rgb(0, 115, 255);
+}
+@keyframes goUp2 {
+  from {
+  }
+  to {
+    transform: translateY(-201px);
+  }
+}
+.chatting:focus-within {
+  animation: goUp2 0.2s linear forwards;
 }
